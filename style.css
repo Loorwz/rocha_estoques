@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap ");
 
 :root{
-    --orange:#ff9500;
+    --orange:#b700ff;
     --white-color:#fff;
     --black-color:#333;
     --light-color:rgba(0,0,0,.3);
@@ -39,6 +39,10 @@ html::-webkit-scrollbar-thumb{
 
 body{
     background-color: #eee;
+}
+
+section{
+    padding:1rem 9%;
 }
 
 header{
@@ -119,6 +123,107 @@ header.active{
     top: 0; left: 0;
     z-index: 100;
 }
+
+.navbar{
+    position: fixed;
+    top: 0; left: 100%;
+    height: 100%;
+    background: var(--white-color);
+    padding: 3rem;
+    width: 30rem;
+}
+
+.navbar.active{
+    left: 0;
+    box-shadow: 0 0 0 100vw var(--light-color)s;
+}
+
+.navbar .user{
+    text-align: center;
+    margin: 3rem auto;
+
+}
+
+.navbar .user img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    border: .5rem solid var(--white-color);
+    object-fit: cover;
+    box-shadow: 5rem 2rem 0 -3rem var(--orange),
+                -5rem -2rem 0 -3rem var(--orange);
+}
+
+.navbar .user h3{
+    padding-top: .5rem;
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.navbar .links a{
+    display: block;
+    border-bottom: .1rem solid var(--light-color);
+    font-size: 2rem;
+    padding:1.5rem 0;
+    color: var(--black-color);
+}
+
+.navbar .links a:last-child{
+    border: none;
+}
+
+.navbar .links a:hover{
+    letter-spacing: .2rem;
+    color: var(--orange);
+}
+
+.navbar #close{
+    position: absolute;
+    top:1rem; right:2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+.navbar #close:hover{
+    color: var(--orange);
+}
+
+.home{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.home .content{
+    flex:1 1 40rem;
+}
+
+.home .image{
+    flex:1 1 40rem;
+    text-align: center;
+}
+
+.home .image img{
+    width:30vw;
+
+}
+
+.home .content span{
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+.home .content h4{
+    color: var(--black-color);
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+
 
 
 
