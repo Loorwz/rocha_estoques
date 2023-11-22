@@ -10,20 +10,21 @@
 <body>
     <section>
         <h2>Contato</h2>
-        <form action="https://api.staticforms.xyz/submit" method="POST">
-        <form action="" method="POST">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+        <form action="" method="post">
             <label>Nome</label>
-            <input type="text" name="name" placeholder="Digite Seu Nome Completo" autocomplete="off">
+            <input type="text" name="name" placeholder="Digite Seu Nome Completo" autocomplete="off" required>
             <label>Email</label>
-            <input type="email" name="email" placeholder="example@gmail.com" autocomplete="off">
+            <input type="email" name="email" placeholder="example@gmail.com" autocomplete="off" required>
             <label>Telefone</label>
-            <input type="code" name="code" placeholder="(12)3456-7890" autocomplete="off">
+            <input type="code" name="code" placeholder="(12)3456-7890" autocomplete="off" required>
             <label>Mensagem</label>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
-            <button  type="submit">Enviar</button>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua Mensagem" required></textarea>
+            <a href="index.html" class="btn">Enviar</a>
 
-            <input type="hidden" name="accesKey" value="EuSouLinde">
-            <input type="hidden" name="redirectTo" value="file:///tmp/guest-qk9qoe/Downloads/rocha_estoques-main/Conta_Cadastrada"
+            <input type="hidden" name="accesKey" value="afcc3be9-bfa0-4847-92b1-9e73155706c7">
+            <input type="hidden" name="redirectTo" value="file:///tmp/guest-qk9qoe/Downloads/rocha_estoques-main/Conta_Cadastrada.html">
+        </form>
         </form>
     </section>
 </body>

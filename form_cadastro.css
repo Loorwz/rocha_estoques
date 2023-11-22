@@ -3,6 +3,7 @@
     --white-color:#fff;
     --black-color:#333;
     --light-color:rgba(0,0,0,.3);
+    --dark-color:rgba(0, 0, 0, 0.904);
 }
 
 *{
@@ -16,7 +17,7 @@ body{
     align-items: center;
     justify-content: center;
     min-width: 100vh;
-    background: var(--black-color);
+    background: var(--dark-color);
 }
 section{
     display: flex;
@@ -28,7 +29,7 @@ section{
     width: 500px;
 }
 section h2{
-    color: var(--black-color);
+    color: var(--orange);
     font-size: 2.5rem;
     margin: 2rem;
 }
@@ -38,7 +39,7 @@ section form{
     width: 100%;
 }
 form label{
-    color: var(--black-color);
+    color: var(--white-color);
     font-size: 17px;
     margin-bottom: 4px;
 }
@@ -55,5 +56,57 @@ form input:focus{
 }
 form textarea{
     padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: var(--white-color);
+    color: var(--black-color);
+    border-radius: 16px;
+}
 
+/*Página de Conta Cadastrada*/
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--black-color);
+    flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: var(--orange);
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: var(--white-color);
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 55px;
+    background: var(--white-color);
+    text-decoration: none;
+    color: var(--black-color);
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
 }
