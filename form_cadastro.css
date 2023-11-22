@@ -16,7 +16,7 @@ body{
     align-items: center;
     justify-content: center;
     min-width: 100vh;
-    background: var(--white-color);
+    background: var(--black-color);
 }
 section{
     display: flex;
@@ -24,7 +24,7 @@ section{
     justify-content: center;
     flex-direction: column;
     padding: 10px 45px ;
-    background: var(--white-color);
+    background: var(--black-color);
     width: 500px;
 }
 section h2{
@@ -39,4 +39,21 @@ section form{
 }
 form label{
     color: var(--black-color);
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+
 }
